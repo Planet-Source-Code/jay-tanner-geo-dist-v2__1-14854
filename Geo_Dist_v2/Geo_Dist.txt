@@ -1,0 +1,45 @@
+
+
+PROGRAM NAME: Geo_Dist
+
+VERSION:      v2.0
+
+=====================================================================
+AUTHOR: Jay Tanner - Jay@NeoProgrammics.com
+
+=====================================================================
+PURPOSE & DESCRIPTION
+
+This program computes the geodesic surface distance between two
+cordinates on the surface of the Earth to an accuracy of about ±50
+meters.
+
+Instead of assuming the Earth to be a perfect sphere, this program
+takes into account the actual polar flattening of the earth and the
+equatorial bulge, which gives a much more accurate computation
+between the given coordinates.
+
+The coordinates arguments are given in degrees minutes and seconds
+and the computed distance may be returned in kilometers, statute
+miles or nautical miles.
+
+=====================================================================
+EXAMPLE
+
+To find the geodesic distance between the U.S Naval Observatory in
+Washington, D.C. and the Paris Observatory in France:
+
+Paris Observatory Coordinates in degrees:
+Long1 = E  2° 20' 14"    and   Lat1 = N 48° 50' 11" 
+
+U.S. Naval Observatory coordinates:
+Long2 = W 77° 03' 55.5"  and   Lat2 = N 38° 55' 17"
+
+Set the distance units to kilometers:
+Units = "km"
+
+
+The returned value = 6,181.62 km  ±0.05
+Which is the required distance between those coordinates as measured
+along the geodesic, spheroidal surface of the Earth.
+
